@@ -878,8 +878,8 @@
       obj.style.left = input_left + 'px';
       obj.style.top = input_top + 'px';
       obj.style.zIndex = input_zindex;
-      obj.width = input_w;
-      obj.height = input_h;
+      obj.style.width = input_w + 'px';
+      obj.style.height = input_h + 'px';
       if (input_display==0)
         obj.style.display = "none";
       else
