@@ -868,7 +868,7 @@
       document.body.appendChild(obj);
     }
     
-    function image_create_stream(input_id,input_url,input_left,input_top,input_zindex,input_display,input_w, input_h, input_title) {
+    function image_create_stream(input_id,input_url,input_left,input_top,input_zindex,input_display,input_w, input_h) {
       if (document.getElementById("gameimage_"+input_id))
         document.getElementById("gameimage_"+input_id).parentNode.removeChild(document.getElementById("gameimage_"+input_id));
       var obj = document.createElement('img');
@@ -880,7 +880,7 @@
       obj.style.zIndex = input_zindex;
       obj.style.width = input_w + 'px';
       obj.style.height = input_h + 'px';
-      obj.title = input_title;
+      obj.title = input_id;
       if (input_display==0)
         obj.style.display = "none";
       else
