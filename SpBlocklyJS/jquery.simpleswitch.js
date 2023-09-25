@@ -54,7 +54,7 @@ var simpleSwitch = function(options) {
 	html = "";
 	html += '<label id="gamelabel_'+options.id+'" class="simple-switch-outter" style="left:'+options.left+'px; top:'+options.top+'px; width:'+options.width+'px; height:'+options.height+'px">';
 	html += outerHTML;
-	html += '<span id="gamespan_'+options.id+'" class="simple-switch-circle" style="width:'+0+'px; height:'+0+'px"></span><span style="font-weight:bold; font-size:'+options.size+'pt; font-family:arial; position:relative; color: '+options.color+'; left: '+(options.width/2-getTextWidth(options.text,"bold "+options.size+"pt arial")/2)+'px; top:'+(options.height+5)+'px;">'+options.text+'</span></label>';
+	html += '<span id="gamespan_'+options.id+'" class="simple-switch-circle" style="width:'+options.height+'px; height:'+options.height+'px"></span><span style="font-weight:bold; font-size:'+options.size+'pt; font-family:arial; position:relative; color: '+options.color+'; left: '+(options.width/2-getTextWidth(options.text,"bold "+options.size+"pt arial")/2)+'px; top:'+(options.height+5)+'px;">'+options.text+'</span></label>';
 	This.replaceWith(html);
 	
 	var div = document.createElement("div");
